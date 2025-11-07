@@ -37,9 +37,7 @@ class HomeViewModel : ViewModel() {
             try {
                 val today = LocalDate.now()
                 val month = today.monthValue.toString().padStart(2, '0')
-                println("OPAAAA -> " + month)
                 val day = today.dayOfMonth.toString().padStart(2, '0')
-                println("OPAAAA 1 -> " + day)
                 val resetPasswordResponse = repository.getDayInfo(month, day)
                 if (resetPasswordResponse.isSuccessful) {
                     apiCallState = StatusService.Success("")
