@@ -91,7 +91,7 @@ fun Home(
                         Button(
                             onClick = { viewModel.getDayInfo() },
                             colors = ButtonDefaults.buttonColors(
-                                containerColor = Color(0xFF00BCD4), // Cyan
+                                containerColor = Color(0xFF00BCD4),
                                 contentColor = Color.Black
                             )
                         ) {
